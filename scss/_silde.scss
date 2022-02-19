@@ -1,0 +1,43 @@
+.slide {
+  &-container {
+    padding-top: 56px;
+    padding-bottom: 87px;
+    text-align: center;
+  }
+
+  &-heading {
+    margin-bottom: 39px;
+    text-align: center;
+  }
+
+  &-image {
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+    align-items: center;
+  }
+  button {
+    background-color: rgba(71, 98, 255, 0.74);
+    border-radius: 10px;
+    width: 8px;
+    height: 8px;
+  }
+  button:first-child {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 100px;
+    width: 45px;
+    height: 15px;
+    background-color: $primary-color;
+  }
+}

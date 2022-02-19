@@ -1,0 +1,91 @@
+.sub {
+  position: relative;
+  height: 687px;
+  background-image: url("../image/bg.png");
+  // padding: 70px 165px 70px 664px;
+  background-position: top;
+
+  &-box {
+    position: absolute;
+    right: 70px;
+    top: 70px;
+  }
+  &-heading {
+    margin-bottom: 16px;
+  }
+
+  &-desc {
+    margin-bottom: 35px;
+  }
+  &-form {
+    padding: 40px 71px;
+    max-width: 611px;
+    max-height: 548px;
+    border-radius: 15px;
+    background-color: white;
+    // padding: 40px 71px;
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 18px 21px;
+      margin: 23px 0;
+      display: inline-block;
+      background: rgba(71, 98, 255, 0.08);
+      border-radius: 8px;
+      border: none;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4762ff;
+      border-radius: 8px;
+      color: white;
+      padding: 22px 50px;
+      margin: 14px 0;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sub-box {
+    position: static;
+    min-width: 300px;
+    min-height: 400px;
+  }
+
+  .sub-form {
+    padding: 20 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sub-box {
+    width: 450px;
+    padding: 10px 10px;
+  }
+
+  .sub-form {
+    padding: 10px 20px;
+  }
+
+  .sub-heading {
+    font-size: 40px;
+  }
+}
